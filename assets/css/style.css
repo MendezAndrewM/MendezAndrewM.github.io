@@ -1,5 +1,43 @@
-
+body {
+    background-color: black;
+}
 
 nav {
-    width: 100%;
+    background: rgb(44, 44, 44)
 }
+
+.brand-logo{
+    /* padding: 2em; */
+    margin-left: 1em; 
+}
+
+ul.right {
+    margin-right: 1em;
+}
+
+#mobile-demo {
+    background-color: rgb(44, 44, 44);
+    /* text-decoration: white */
+}
+.sidenav li>a {
+    color: rgb(207, 207, 207);
+}
+
+.sidenav li>a:hover {
+    color: #aec4e0;
+    text-shadow:0px 0px 30px #ffffff;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    background-color: rgba(0, 0, 0, 0.507);
+  }
+  
+@media only screen and (max-width: 484px) {
+    .brand-logo{
+        margin-left: 0;
+    }
+    nav .brand-logo {
+        font-size: 1.7rem;
+    }
+  }
