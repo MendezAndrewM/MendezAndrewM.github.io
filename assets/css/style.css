@@ -1,9 +1,121 @@
-body {
-    background-color: black;
+/* 
+OUTLINE
+    1. General Styles
+        a. Buttons
+        b. :hover
+    2. <body> Background Animation 
+    3. NavBar
+        a. Backgrounds
+        b. :hover
+        c. @media
+    4. Main Content
+        a. Home Page
+        b. Bio Page
+        c. Portfolio Page
+        d. Contact Page
+    5. Footer
+    6. Media Queries
+*/
+
+
+
+/* 
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+|||||||||||||||      1. General Styles      ||||||||||||||||||||||
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+*/
+
+button {
+    background-color: rgba(27, 27, 27, 0);
+    color: #adadad;
+    font-size: 3vh;
+    border: #adadad solid 1px;
+    padding: 2px 6px 2px 6px;;
+}
+button:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #dadada;
+    border: #adadad 1px solid;
+}
+:hover {
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+button:active {
+    
+    background-color: rgba(0, 0, 0, 1);
 }
 
+/* Hide/Show elements with Jquery */
+.activated {
+    opacity: 1;
+    -moz-transition: all 0.4s ease-in;
+    -o-transition: all 0.4s ease-in;
+    -webkit-transition: all 0.4s ease-in;
+    transition: all 0.4s ease-in;
+}
+.deactivated {
+    opacity: 0;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+
+
+/* 
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+||||||||      2. <body> Background Animation       |||||||||||||||
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+*/
+
+
+
+body {
+	width: 100wh;
+	height: 90vh;
+	color: #fff;
+	background: linear-gradient(-45deg, rgb(10, 10, 10), rgb(27, 27, 27), rgb(44, 44, 44), rgb(36, 36, 36));
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
+}
+@-webkit-keyframes Gradient {
+	0% {background-position: 0% 50%}
+	50% {background-position: 100% 50%}
+	100% {background-position: 0% 50%}
+}
+@-moz-keyframes Gradient {
+	0% {background-position: 0% 50%}
+	50% {background-position: 100% 50%}
+	100% {background-position: 0% 50%}
+}
+@keyframes Gradient {
+	0% {background-position: 0% 50%}
+	50% {background-position: 100% 50%}
+	100% {background-position: 0% 50%}
+}
+
+
+
+/* 
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+|||||||||||||||||||      3. NavBar       |||||||||||||||||||||||||
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+*/
+
+
 nav {
-    background: rgb(44, 44, 44)
+    background-color: rgb(44, 44, 44);
+    background-image: linear-gradient(rgb(15, 15, 15), rgb(45, 45, 45), rgb(30, 30, 30));
+}
+.sidenav {
+    background-color: rgb(44, 44, 44);
+    background-image: linear-gradient(rgb(30, 30, 30), rgb(40, 40, 40), rgb(45, 45, 45), rgb(40, 40, 40), rgb(50, 50, 50), rgb(30, 30, 30),rgb(15, 15, 15));
 }
 
 .brand-logo{
@@ -13,6 +125,7 @@ nav {
 
 ul.right {
     margin-right: 1em;
+    padding: .2em
 }
 
 #mobile-demo {
@@ -20,19 +133,31 @@ ul.right {
     /* text-decoration: white */
 }
 .sidenav li>a {
-    color: rgb(207, 207, 207);
+    color: #ffffff;
 }
+ul.right>li>a {
+    font-weight: 700;
+}
+.sidenav li>a:hover, ul.right>li>a:hover {
+    color: black;
+    text-shadow:0px 0px 15px rgb(224, 224, 224);
+    background-color: inherit;
+    font-weight: 700;
+    overflow: hidden;
+  }
 
 .sidenav li>a:hover {
-    color: #aec4e0;
-    text-shadow:0px 0px 30px #ffffff;
-    -moz-transition: all 0.2s ease-in;
-    -o-transition: all 0.2s ease-in;
-    -webkit-transition: all 0.2s ease-in;
-    transition: all 0.2s ease-in;
-    background-color: rgba(0, 0, 0, 0.507);
+    background-color: rgb(50, 50, 50);
+    background-image: linear-gradient(rgb(32, 32, 32), rgb(40, 40, 40), rgb(48, 48, 48), rgb(40, 40, 40) rgb(32, 32, 32));
+}
+  
+  a.brand-logo:hover {
+    color: black;
+    text-shadow:0px 0px 15px rgb(224, 224, 224);
   }
   
+/* Media Query is used to adjust Spacing and Font Size on small screens to prevent overflow */
+
 @media only screen and (max-width: 484px) {
     .brand-logo{
         margin-left: 0;
@@ -41,3 +166,44 @@ ul.right {
         font-size: 1.7rem;
     }
   }
+
+
+  
+
+ /* 
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+||||||||||||||||      3. Main Content       ||||||||||||||||||||||
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+*/
+
+
+
+/* ||||||||||||||||||||     HOME PAGE     |||||||||||||||||||||||| */
+
+
+#start {
+    /* width: 100%;
+    height: 100%; */
+    z-index: 100;
+    color: #adadad;
+    margin: 30vh 0 0 5vw;
+}
+#title {
+    margin: 1em;
+}
+#start-btns>button {
+    margin: 1em;
+}
+@media only screen and (max-width: 650px) {
+    #start {
+        margin-top: 15vh;
+    }
+  }
+
+
+/* ||||||||||||||||||||     BIO PAGE     |||||||||||||||||||||||| */  
+
+#profile-head>img {
+    max-height: 350px;
+    max-width: 350px;
+}
