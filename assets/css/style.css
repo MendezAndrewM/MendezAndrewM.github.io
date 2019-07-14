@@ -1,5 +1,79 @@
+/* 
+OUTLINE
+    1. General Styles
+        a. Buttons
+        b. :hover
+    2. <body> Background Animation 
+    3. NavBar
+        a. Backgrounds
+        b. :hover
+        c. @media
+    4. Main Content
+        a. Home Page
+        b. Bio Page
+        c. Portfolio Page
+        d. Contact Page
+    5. Footer
+    6. Media Queries
+*/
 
-/* Background Gradient Animation */
+
+
+/* 
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+|||||||||||||||      1. General Styles      ||||||||||||||||||||||
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+*/
+
+button {
+    background-color: rgba(27, 27, 27, 0);
+    color: #adadad;
+    font-size: 3vh;
+    border: #adadad solid 1px;
+    padding: 2px 6px 2px 6px;;
+}
+button:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #dadada;
+    border: #adadad 1px solid;
+}
+:hover {
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+button:active {
+    
+    background-color: rgba(0, 0, 0, 1);
+}
+
+/* Hide/Show elements with Jquery */
+.activated {
+    opacity: 1;
+    -moz-transition: all 0.4s ease-in;
+    -o-transition: all 0.4s ease-in;
+    -webkit-transition: all 0.4s ease-in;
+    transition: all 0.4s ease-in;
+}
+.deactivated {
+    opacity: 0;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+
+
+/* 
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+||||||||      2. <body> Background Animation       |||||||||||||||
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+*/
+
+
+
 body {
 	width: 100wh;
 	height: 90vh;
@@ -27,29 +101,13 @@ body {
 }
 
 
-button {
-    background-color: rgba(27, 27, 27, 0);
-    color: #adadad;
-    font-size: 3vh;
-    border: #adadad solid 1px;
-    padding: 2px 6px 2px 6px;;
-}
-button:hover {
-    cursor: pointer;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #dadada;
-    border: #adadad 1px solid;
-}
 
-:hover {
-    -moz-transition: all 0.2s ease-in;
-    -o-transition: all 0.2s ease-in;
-    -webkit-transition: all 0.2s ease-in;
-    transition: all 0.2s ease-in;
-}
+/* 
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+|||||||||||||||||||      3. NavBar       |||||||||||||||||||||||||
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+*/
 
-
-/* Nav Bar Styles */
 
 nav {
     background-color: rgb(44, 44, 44);
@@ -112,9 +170,16 @@ ul.right>li>a {
 
   
 
-  /* Main Content */
+ /* 
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+||||||||||||||||      3. Main Content       ||||||||||||||||||||||
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+*/
 
-    /* Home */
+
+
+/* ||||||||||||||||||||     HOME PAGE     |||||||||||||||||||||||| */
+
 
 #start {
     /* width: 100%;
@@ -134,3 +199,11 @@ ul.right>li>a {
         margin-top: 15vh;
     }
   }
+
+
+/* ||||||||||||||||||||     BIO PAGE     |||||||||||||||||||||||| */  
+
+#profile-head>img {
+    max-height: 350px;
+    max-width: 350px;
+}
