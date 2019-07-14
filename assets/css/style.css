@@ -203,6 +203,10 @@ ul.right>li>a {
 
 /* ||||||||||||||||||||     BIO PAGE     |||||||||||||||||||||||| */  
 
+#bio-page {
+    display: none
+}
+
 #profile-head>img {
     max-height: 350px;
     max-width: 350px;

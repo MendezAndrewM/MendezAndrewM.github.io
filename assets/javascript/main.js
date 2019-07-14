@@ -4,7 +4,8 @@ $(document).ready(function () {
 
 
 function deavtivateHome() {
-  $("#start").attr("display", "none")
+  $("#start").hide()
+  $("#bio-page").show().removeClass("deactivated").addClass("activated") //To Be Rplaced
 }
 
 // Click Events from Home Page 
