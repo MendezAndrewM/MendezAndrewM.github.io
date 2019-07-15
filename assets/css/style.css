@@ -233,3 +233,6 @@ ul.right>li>a {
     font-weight: 700;
     overflow: hidden;
   }
+.portfolio-box {
+    margin: 5px; /* FIX! */
+}
