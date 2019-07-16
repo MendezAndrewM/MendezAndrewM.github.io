@@ -30,29 +30,34 @@
 </head>
 
 <body>
+    <!--------------------------------------------------
+        -------------------  Nav Bar -----------------------
+        --------------------------------------------------->
     <section id="navBar" class="deactivated">
         <nav>
             <div class="nav-wrapper">
                 <a href="#!" class="brand-logo">Andrew Mendez</a>
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down">
-                    <li><a href="sass.html">Home</a></li>
-                    <li><a href="badges.html">About</a></li>
-                    <li><a href="collapsible.html">Portfolio</a></li>
-                    <li><a href="collapsible.html">Contact</a></li>
+                    <li><a class="nav-home">Home</a></li>
+                    <li><a class="nav-about">About</a></li>
+                    <li><a class="nav-portfolio">Portfolio</a></li>
+                    <li><a class="nav-contact">Contact</a></li>
                 </ul>
             </div>
         </nav>
         <ul class="sidenav" id="mobile-demo">
-            <li><a href="sass.html">Home</a></li>
-            <li><a href="badges.html">About</a></li>
-            <li><a href="collapsible.html">Portfolio</a></li>
-            <li><a href="mobile.html">Contact</a></li>
+            <li><a class="nav-home">Home</a></li>
+            <li><a class="nav-about">About</a></li>
+            <li><a class="nav-portfolio">Portfolio</a></li>
+            <li><a class="nav-contact">Contact</a></li>
         </ul>
     </section>
 
 
-
+    <!--------------------------------------------------
+        ------------------  Home Page ----------------------
+        --------------------------------------------------->
     <div id="start" class="row">
         <div class="s8 m6 offset-s2" id="title">
             <h2>Andrew Mendez</h2>
@@ -64,26 +69,77 @@
         </div>
     </div>
 
+
+    <!--Main Content Container-->
     <div class="container">
 
-        <!-- <div id="bio-page" class="row deactivated">
-            <div id="profile-head" class="col s8 m3">
-                <img src="https://avatars0.githubusercontent.com/u/42225223?s=460&v=4" alt="GitHub Profile Picture">
-                <h4>Andrew Mendez</h4>
-                <h5>Phoenix, AZ</h5>
+        <!--------------------------------------------------
+        -------------------  Bio Page ----------------------
+        --------------------------------------------------->
+        <!--"https://avatars0.githubusercontent.com/u/42225223?s=460&v=4"-->
+        <div id="bio-page" class="deactivated hide-at-start">
+            <div class="row">
+                <div class="card content-cardM">
+                    <div class="card-content white-text row">
+                        <h4 class="col s12 m8">About</h4>
+                    </div>
+                    <div class="row">
+                        <div class="col s12 m4">
+                            <div class="card-title"> Andrew Mendez</div><br>
+                            <img class="responsive-img"
+                                src="https://cdn.stockphotosecrets.com/wp-content/uploads/2018/08/hide-the-pain-stockphoto-840x560.jpg"
+                                alt="">
+                            <h6>Mendez.AndrewM@Gmail.com</h6>
+                            <h6>(602) 574-5448</h6><br>
+                            <a
+                                href="https://docs.google.com/document/d/1fsgV8pfT_-ZX3_V4WiTUqK1dt6hcz7M5d9bX2x7szz4/edit?usp=sharing">Resume</a>
+                        </div>
+                        <div class="col s12 m8">
+                            <span class="card-title bio">Bio</span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error dolorem sunt iste
+                                mollitia, eum saepe sed nulla laborum doloribus repellendus doloremque corrupti,
+                                perferendis eligendi? Reprehenderit quod repellendus voluptas ipsa id?</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur voluptate ducimus
+                                nobis? Consequatur nisi delectus magnam earum assumenda ut veniam ea excepturi sit ullam
+                                officia, non voluptate. Ratione, animi magni!</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi sint harum, nostrum
+                                inventore laboriosam ullam minus quisquam ducimus magnam quibusdam unde non adipisci
+                                aliquam laborum doloremque. Minus ex autem dolorem?</p>
+                            <br>
+                            <span class="card-title">Proficiencies</span>
+                            <br>
+                            <table>
+                                <tr>
+                                    <td><i class="material-icons tiny">done</i> HTML5/CSS3</td>
+                                    <td><i class="material-icons tiny">done</i> JavaScript</td>
+                                    <td><i class="material-icons tiny">done</i> Git</td>
+                                </tr>
+                                <tr>
+                                    <td><i class="material-icons tiny">done</i> BootStrap</td>
+                                    <td><i class="material-icons tiny">done</i> jQuery</td>
+                                    <td><i class="material-icons tiny">done</i> SQL</td>
+                                </tr>
+                                <tr>
+                                    <td><i class="material-icons tiny">done</i> Materialize</td>
+                                    <td><i class="material-icons tiny">done</i> Node.js</td>
+                                    <td><i class="material-icons tiny">done</i> FireBase</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div id="bio" class="col s8 m5">
-                <h3>Bio</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere necessitatibus voluptate adipisci. Temporibus, alias corrupti cumque voluptate voluptatibus labore eveniet cum perferendis, tempora ex facere quae non molestiae quia perspiciatis!</p>
-            </div>
-        </div> -->
+        </div>
 
 
-        <div id="portfolio" class="deactivated">
-
+        <!--------------------------------------------------
+        -------------------  Portfolio ---------------------
+        --------------------------------------------------->
+        <div id="portfolio" class="deactivated hide-at-start">
             <div class="row">
                 <div class="col s12">
                     <div class="card content-cardM">
+
                         <div class="card-content white-text row">
                             <span class="card-title col s12 m8 card-Header">Portfolio</span>
                             <span class="col s6 m4 right-align side-link">
@@ -91,53 +147,111 @@
                                 <a href="https://codepen.io/Andre_Mendez/">CodePen</a>
                             </span>
                         </div>
-
-                                                <!-- TODO: Replace Stock Photos with Relevant Images -->
-                                                <!-- TODO: Fix IMG <Margins -->
+                        <!-- TODO: Replace Stock Photos with Relevant Images -->
+                        <!-- TODO: Update Project Links -->
                         <div class="row">
-                            <div class="col s12 m4 portfolio-box"> 
-                                <img class="portfolio-Img responsive-img" src="https://cdn.stockphotosecrets.com/wp-content/uploads/2018/08/hide-the-pain-stockphoto-840x560.jpg" alt=""><br>
-                                <span>project name |</span><span> GitHub Repository</span><br>
-                                <span>Project Description</span>
-                            </div>
-                            <div class="col s12 m4 portfolio-box">
-                                <img class="portfolio-Img responsive-img" src="https://cdn.stockphotosecrets.com/wp-content/uploads/2018/08/hide-the-pain-stockphoto-840x560.jpg" alt=""><br>
-                                <span>project name |</span><span> GitHub Repository</span><br>
-                                <span>Project Description</span>
-                            </div>
-                            <div class="col s12 m4 portfolio-box">
-                                <img class="portfolio-Img responsive-img" src="https://cdn.stockphotosecrets.com/wp-content/uploads/2018/08/hide-the-pain-stockphoto-840x560.jpg" alt=""><br>
-                                <span>project name |</span><span> GitHub Repository</span><br>
-                                <span>Project Description</span>
+                            <div class="col m1"></div>
+                            <div class="col m10">
+                                <div class="row">
+                                    <div class="col s12 m4 portfolio-box">
+                                        <img class="portfolio-Img responsive-img"
+                                            src="https://cdn.stockphotosecrets.com/wp-content/uploads/2018/08/hide-the-pain-stockphoto-840x560.jpg"
+                                            alt=""><br>
+                                        <span>project name |</span><span> GitHub Repository</span><br>
+                                        <span>Project Description</span>
+                                    </div>
+                                    <div class="col s12 m4 portfolio-box">
+                                        <img class="portfolio-Img responsive-img"
+                                            src="https://cdn.stockphotosecrets.com/wp-content/uploads/2018/08/hide-the-pain-stockphoto-840x560.jpg"
+                                            alt=""><br>
+                                        <span>project name |</span><span> GitHub Repository</span><br>
+                                        <span>Project Description</span>
+                                    </div>
+                                    <div class="col s12 m4 portfolio-box">
+                                        <img class="portfolio-Img responsive-img"
+                                            src="https://cdn.stockphotosecrets.com/wp-content/uploads/2018/08/hide-the-pain-stockphoto-840x560.jpg"
+                                            alt=""><br>
+                                        <span>project name |</span><span> GitHub Repository</span><br>
+                                        <span>Project Description</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col s12 m4 portfolio-box"> 
-                                <img class="portfolio-Img responsive-img" src="https://cdn.stockphotosecrets.com/wp-content/uploads/2018/08/hide-the-pain-stockphoto-840x560.jpg" alt=""><br>
-                                <span>project name |</span><span> GitHub Repository</span><br>
-                                <span>Project Description</span>
-                            </div>
-                            <div class="col s12 m4 portfolio-box">
-                                <img class="portfolio-Img responsive-img" src="https://cdn.stockphotosecrets.com/wp-content/uploads/2018/08/hide-the-pain-stockphoto-840x560.jpg" alt=""><br>
-                                <span>project name |</span><span> GitHub Repository</span><br>
-                                <span>Project Description</span>
-                            </div>
-                            <div class="col s12 m4 portfolio-box">
-                                <img class="portfolio-Img responsive-img" src="https://cdn.stockphotosecrets.com/wp-content/uploads/2018/08/hide-the-pain-stockphoto-840x560.jpg" alt=""><br>
-                                <span>project name |</span><span> GitHub Repository</span><br>
-                                <span>Project Description</span>
+                            <div class="col m1"></div>
+                            <div class="col m10">
+                                <div class="row">
+                                    <div class="col s12 m4 portfolio-box">
+                                        <img class="portfolio-Img responsive-img"
+                                            src="https://cdn.stockphotosecrets.com/wp-content/uploads/2018/08/hide-the-pain-stockphoto-840x560.jpg"
+                                            alt=""><br>
+                                        <span>project name |</span><span> GitHub Repository</span><br>
+                                        <span>Project Description</span>
+                                    </div>
+                                    <div class="col s12 m4 portfolio-box">
+                                        <img class="portfolio-Img responsive-img"
+                                            src="https://cdn.stockphotosecrets.com/wp-content/uploads/2018/08/hide-the-pain-stockphoto-840x560.jpg"
+                                            alt=""><br>
+                                        <span>project name |</span><span> GitHub Repository</span><br>
+                                        <span>Project Description</span>
+                                    </div>
+                                    <div class="col s12 m4 portfolio-box">
+                                        <img class="portfolio-Img responsive-img"
+                                            src="https://cdn.stockphotosecrets.com/wp-content/uploads/2018/08/hide-the-pain-stockphoto-840x560.jpg"
+                                            alt=""><br>
+                                        <span>project name |</span><span> GitHub Repository</span><br>
+                                        <span>Project Description</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-
-
                     </div>
                 </div>
             </div>
-
         </div>
 
-        <div id="contact">
 
+        <!--------------------------------------------------
+        --------------------  Contact  ---------------------
+        --------------------------------------------------->
+        <div id="contact" class="deactivated hide-at-start">
+            <div class="row">
+                <div class="card content-cardM">
+                    <div class="card-content white-text row">
+                        <h4 class="col s12 m4">Contact</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem facilis quisquam
+                            officia laborum recusandae nesciunt dolor laboriosam placeat quia illo molestias animi
+                            doloribus explicabo, praesentium, modi dignissimos maxime cum officiis.</p>
+                        <div class="row">
+                            <form class="col s12">
+                                <div class="row">
+                                    <div class="input-field col s12 m6">
+                                        <input id="first_name" type="text" class="validate">
+                                        <label for="first_name">First Name</label>
+                                    </div>
+                                    <div class="input-field col s12 m6">
+                                        <input id="last_name" type="text" class="validate">
+                                        <label for="last_name">Organization (Optional)</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <input id="email" type="email" class="validate">
+                                        <label for="email">Email</label>
+                                    </div>
+                                    <div class="row">
+                                        <div class="input-field col s12">
+                                            <input id="password" type="text" class="validate">
+                                            <label for="password">Message</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button id="contact-submit" type="submit">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </div>
