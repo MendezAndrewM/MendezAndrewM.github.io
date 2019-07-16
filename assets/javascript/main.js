@@ -57,6 +57,12 @@ $(".nav-contact").click(function() {
   activepage = $("#contact") 
 })
 
+// Contact Page 
+
+$("#contact-submit").click(function() {
+  alert("Feature Coming Soon")
+})
+
 
 
 
