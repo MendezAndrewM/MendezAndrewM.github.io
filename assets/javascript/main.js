@@ -33,11 +33,29 @@ $("#portfolio-btn").click(function () {
   // TODO: Make Portfolio Page Slide in from the Right
 });
 
-$("#nav-contact").click(function() {
+
+
+// Nav Bar Click Events
+$(".nav-home").click(function() {
+  activepage.hide();
+  $("#start").show().removeClass("deactivated").addClass("activated")
+  activepage = $("#start") 
+})
+$(".nav-about").click(function() {
+  activepage.hide();
+  $("#bio-page").show().removeClass("deactivated").addClass("activated")
+  activepage = $("#bio-page") 
+})
+$(".nav-portfolio").click(function() {
+  activepage.hide();
+  $("#portfolio").show().removeClass("deactivated").addClass("activated")
+  activepage = $("#portfolio") 
+})
+$(".nav-contact").click(function() {
   activepage.hide();
   $("#contact").show().removeClass("deactivated").addClass("activated")
+  activepage = $("#contact") 
 })
-
 
 
 
