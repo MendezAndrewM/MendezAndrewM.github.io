@@ -1,15 +1,19 @@
 $(document).ready(function () {
 // Materialize function for sidebar functionality
   $('.sidenav').sidenav();
+  $(".hide-at-start").hide()
+let activepage;
 
 
 function homeToProfile() {
   $("#start").hide()
   $("#bio-page").show().removeClass("deactivated").addClass("activated") //To Be Rplaced
+  activepage = $("#bio-page");
 }
 function homeToPortfolio() {
   $("#start").hide()
   $("#portfolio").show().removeClass("deactivated").addClass("activated") //To Be Rplaced
+  activepage = $("#portfolio-page");
 }
 
 // Click Events from Home Page 
@@ -28,6 +32,11 @@ $("#portfolio-btn").click(function () {
   $("footer").removeClass("deactivated").addClass("activated")
   // TODO: Make Portfolio Page Slide in from the Right
 });
+
+$("#nav-contact").click(function() {
+  activepage.hide();
+  $("#contact").show().removeClass("deactivated").addClass("activated")
+})
 
 
 

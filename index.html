@@ -42,7 +42,7 @@
                     <li><a href="sass.html">Home</a></li>
                     <li><a href="badges.html">About</a></li>
                     <li><a href="collapsible.html">Portfolio</a></li>
-                    <li><a href="collapsible.html">Contact</a></li>
+                    <li><a id="nav-contact">Contact</a></li>
                 </ul>
             </div>
         </nav>
@@ -77,16 +77,12 @@
         --------------------------------------------------->
         <!--"https://avatars0.githubusercontent.com/u/42225223?s=460&v=4"-->
 
-        <div id="bio-page" class="deactivated">
+        <div id="bio-page" class="deactivated hide-at-start">
             <div class="row">
-                <!-- <div class="col s12"> -->
                 <div class="card content-cardM">
                     <div class="card-content white-text row">
                         <h4 class="col s12 m8">About</h4>
                     </div>
-                    <!-- <div class="row">
-                        <div class="col s1"></div>
-                        <div class="col s10"> -->
                     <div class="row">
                         <div class="col s12 m4">
                             <div class="card-title"> Andrew Mendez</div><br>
@@ -95,7 +91,8 @@
                                 alt="">
                             <h6>Mendez.AndrewM@Gmail.com</h6>
                             <h6>(602) 574-5448</h6><br>
-                            <a href="https://docs.google.com/document/d/1fsgV8pfT_-ZX3_V4WiTUqK1dt6hcz7M5d9bX2x7szz4/edit?usp=sharing">Resume</a>
+                            <a
+                                href="https://docs.google.com/document/d/1fsgV8pfT_-ZX3_V4WiTUqK1dt6hcz7M5d9bX2x7szz4/edit?usp=sharing">Resume</a>
                         </div>
                         <div class="col s12 m8">
                             <span class="card-title bio">Bio</span>
@@ -130,26 +127,7 @@
                             </table>
                         </div>
                     </div>
-
-
-                    <!-- </div>
-                    </div> -->
-
-                    <!-- <div id="profile-head" class="col s8 m3">
-                            <img class="responsive-img"
-                                src=https://cdn.stockphotosecrets.com/wp-content/uploads/2018/08/hide-the-pain-stockphoto-840x560.jpg"
-                                alt="GitHub Profile Picture">
-                            <h4>Andrew Mendez</h4>
-                            <h5>Phoenix, AZ</h5>
-                        </div>
-                        <div id="bio" class="col s8 m5">
-                            <h3>Bio</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere necessitatibus voluptate
-                                adipisci. Temporibus, alias corrupti cumque voluptate voluptatibus labore eveniet cum
-                                perferendis, tempora ex facere quae non molestiae quia perspiciatis!</p>
-                        </div> -->
                 </div>
-                <!-- </div> -->
             </div>
         </div>
 
@@ -157,8 +135,7 @@
         <!--------------------------------------------------
         -------------------  Portfolio ---------------------
         --------------------------------------------------->
-        <div id="portfolio" class="deactivated">
-
+        <div id="portfolio" class="deactivated hide-at-start">
             <div class="row">
                 <div class="col s12">
                     <div class="card content-cardM">
@@ -170,10 +147,8 @@
                                 <a href="https://codepen.io/Andre_Mendez/">CodePen</a>
                             </span>
                         </div>
-
                         <!-- TODO: Replace Stock Photos with Relevant Images -->
-                        <!-- TODO: Fix IMG <Margins -->
-                        <!-- <div class="col m1"></div> -->
+                        <!-- TODO: Update Project Links -->
                         <div class="row">
                             <div class="col m1"></div>
                             <div class="col m10">
@@ -230,17 +205,33 @@
                                 </div>
                             </div>
                         </div>
-
-
-
                     </div>
                 </div>
             </div>
-
         </div>
 
-        <div id="contact">
 
+        <!--------------------------------------------------
+        --------------------  Contact  ---------------------
+        --------------------------------------------------->
+
+
+        <div id="contact" class="deactivated hide-at-start">
+            <div class="row">
+                <div class="card content-cardM">
+                    <div class="card-content white-text row">
+                        <h4 class="col s12 m8">Contact</h4>
+                        <div id="input-box">
+                            <p>Name</p>
+                            <input class="input-line" type="text">
+                            <p>Email</p>
+                            <input class="input-line" type="text">
+                            <p>Message</p>
+                            <textarea id="message" rows="10" cols="90"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </div>
