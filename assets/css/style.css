@@ -244,8 +244,14 @@ p {
 } */
 
 
+/* |||||||||||||||||||     Contact     ||||||||||||||||||||||||| */
 
-tr {
-    box-shadow: none
-    
+.validate {
+    color: #ffffff;
+}
+#instructions {
+    margin-bottom: 12px;
+}
+.optional {
+    font-size: .7rem
 }
