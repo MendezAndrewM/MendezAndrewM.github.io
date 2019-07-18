@@ -4,7 +4,7 @@ $(document).ready(function () {
   const footer = $("#footer");
   let activePage = $("#start");
   navBar.hide();
-  footer.hide()
+  footer.hide();
   $(".hide-at-start").hide();
   $('.sidenav').sidenav();
 
@@ -82,8 +82,6 @@ $(document).ready(function () {
   $("#contact-submit").click(function () {
     alert("Feature Coming Soon");
   });
-
-
 
 
 });
