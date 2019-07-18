@@ -220,33 +220,42 @@
                 <div class="card content-cardM">
                     <div class="card-content white-text row">
                         <h4 class="col s12 m4">Contact</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem facilis quisquam
+                        <p id="instructions">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem facilis quisquam
                             officia laborum recusandae nesciunt dolor laboriosam placeat quia illo molestias animi
                             doloribus explicabo, praesentium, modi dignissimos maxime cum officiis.</p>
                         <div class="row">
                             <form class="col s12">
                                 <div class="row">
                                     <div class="input-field col s12 m6">
+                                        <i class="material-icons prefix">person</i>
                                         <input id="first_name" type="text" class="validate">
-                                        <label for="first_name">First Name</label>
+                                        <label for="first_name">Name</label>
                                     </div>
                                     <div class="input-field col s12 m6">
+                                        <i class="material-icons prefix">location_city</i>
                                         <input id="last_name" type="text" class="validate">
-                                        <label for="last_name">Organization (Optional)</label>
+                                        <label for="last_name">Organization <span class="optional">(Optional)</span></label>
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="input-field col s12">
+                                    <div class="input-field col s12 m7">
+                                        <i class="material-icons prefix">email</i>
                                         <input id="email" type="email" class="validate">
                                         <label for="email">Email</label>
                                     </div>
+                                    <div class="input-field col s6 m5">
+                                            <i class="material-icons prefix">phone</i>
+                                            <input id="icon_telephone" type="tel" class="validate">
+                                            <label for="icon_telephone">Phone Number <span class="optional">(Optional)</span></label>
+                                    </div>
+                                </div>
                                     <div class="row">
                                         <div class="input-field col s12">
+                                            <i class="material-icons prefix">create</i>
                                             <input id="password" type="text" class="validate">
                                             <label for="password">Message</label>
                                         </div>
                                     </div>
-                                </div>
                                 <button id="contact-submit" type="submit">Submit</button>
                             </form>
                         </div>
