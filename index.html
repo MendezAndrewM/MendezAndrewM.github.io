@@ -36,10 +36,10 @@
     <section id="navBar" class="deactivated">
         <nav>
             <div class="nav-wrapper">
-                <a href="#!" class="brand-logo">Andrew Mendez</a>
+                <a class="brand-logo nav-home">Andrew Mendez</a>
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down">
-                    <li><a class="nav-home">Home</a></li>
+                    <!-- <li><a class="nav-home">Home</a></li> -->
                     <li><a class="nav-about">About</a></li>
                     <li><a class="nav-portfolio">Portfolio</a></li>
                     <li><a class="nav-contact">Contact</a></li>
@@ -47,7 +47,7 @@
             </div>
         </nav>
         <ul class="sidenav" id="mobile-demo">
-            <li><a class="nav-home">Home</a></li>
+            <!-- <li><a class="nav-home">Home</a></li> -->
             <li><a class="nav-about">About</a></li>
             <li><a class="nav-portfolio">Portfolio</a></li>
             <li><a class="nav-contact">Contact</a></li>
@@ -88,12 +88,14 @@
                         <div class="col s12 m4">
                             <div class="card-title"> Andrew Mendez</div><br>
                             <img class="responsive-img"
-                                src="https://cdn.stockphotosecrets.com/wp-content/uploads/2018/08/hide-the-pain-stockphoto-840x560.jpg"
-                                alt="">
+                                src="https://avatars0.githubusercontent.com/u/42225223?s=460&v=4" alt="">
                             <h6>Mendez.AndrewM@Gmail.com</h6>
                             <h6>(602) 574-5448</h6><br>
-                            <a
+                            <a class="profile-link"
                                 href="https://docs.google.com/document/d/1fsgV8pfT_-ZX3_V4WiTUqK1dt6hcz7M5d9bX2x7szz4/edit?usp=sharing">Resume</a>
+                            <br>
+                            <a class="profile-link" href="https://www.linkedin.com/in/MendezAndrewM/">LinkedIn</a>
+
                         </div>
                         <div class="col s12 m8">
                             <span class="card-title bio">Bio</span>
@@ -158,22 +160,22 @@
                                         <img class="portfolio-Img responsive-img"
                                             src="https://cdn.stockphotosecrets.com/wp-content/uploads/2018/08/hide-the-pain-stockphoto-840x560.jpg"
                                             alt=""><br>
-                                        <span>project name |</span><span> GitHub Repository</span><br>
-                                        <span>Project Description</span>
+                                        <p><span>project name |</span><span> GitHub Repository</span><br>
+                                            <span>Project Description</span></p>
                                     </div>
                                     <div class="col s12 m4 portfolio-box">
                                         <img class="portfolio-Img responsive-img"
                                             src="https://cdn.stockphotosecrets.com/wp-content/uploads/2018/08/hide-the-pain-stockphoto-840x560.jpg"
                                             alt=""><br>
-                                        <span>project name |</span><span> GitHub Repository</span><br>
-                                        <span>Project Description</span>
+                                        <p><span>project name |</span><span> GitHub Repository</span><br>
+                                            <span>Project Description</span></p>
                                     </div>
                                     <div class="col s12 m4 portfolio-box">
                                         <img class="portfolio-Img responsive-img"
                                             src="https://cdn.stockphotosecrets.com/wp-content/uploads/2018/08/hide-the-pain-stockphoto-840x560.jpg"
                                             alt=""><br>
-                                        <span>project name |</span><span> GitHub Repository</span><br>
-                                        <span>Project Description</span>
+                                        <p><span>project name |</span><span> GitHub Repository</span><br>
+                                            <span>Project Description</span></p>
                                     </div>
                                 </div>
                             </div>
@@ -186,22 +188,22 @@
                                         <img class="portfolio-Img responsive-img"
                                             src="https://cdn.stockphotosecrets.com/wp-content/uploads/2018/08/hide-the-pain-stockphoto-840x560.jpg"
                                             alt=""><br>
-                                        <span>project name |</span><span> GitHub Repository</span><br>
-                                        <span>Project Description</span>
+                                        <p><span>project name |</span><span> GitHub Repository</span><br>
+                                            <span>Project Description</span></p>
                                     </div>
                                     <div class="col s12 m4 portfolio-box">
                                         <img class="portfolio-Img responsive-img"
                                             src="https://cdn.stockphotosecrets.com/wp-content/uploads/2018/08/hide-the-pain-stockphoto-840x560.jpg"
                                             alt=""><br>
-                                        <span>project name |</span><span> GitHub Repository</span><br>
-                                        <span>Project Description</span>
+                                        <p><span>project name |</span><span> GitHub Repository</span><br>
+                                            <span>Project Description</span></p>
                                     </div>
                                     <div class="col s12 m4 portfolio-box">
                                         <img class="portfolio-Img responsive-img"
                                             src="https://cdn.stockphotosecrets.com/wp-content/uploads/2018/08/hide-the-pain-stockphoto-840x560.jpg"
                                             alt=""><br>
-                                        <span>project name |</span><span> GitHub Repository</span><br>
-                                        <span>Project Description</span>
+                                        <p><span>project name |</span><span> GitHub Repository</span><br>
+                                            <span>Project Description</span></p>
                                     </div>
                                 </div>
                             </div>
@@ -220,7 +222,8 @@
                 <div class="card content-cardM">
                     <div class="card-content white-text row">
                         <h4 class="col s12 m4">Contact</h4>
-                        <p id="instructions">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem facilis quisquam
+                        <p id="instructions">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
+                            facilis quisquam
                             officia laborum recusandae nesciunt dolor laboriosam placeat quia illo molestias animi
                             doloribus explicabo, praesentium, modi dignissimos maxime cum officiis.</p>
                         <div class="row">
@@ -234,7 +237,8 @@
                                     <div class="input-field col s12 m6">
                                         <i class="material-icons prefix">location_city</i>
                                         <input id="last_name" type="text" class="validate">
-                                        <label for="last_name">Organization <span class="optional">(Optional)</span></label>
+                                        <label for="last_name">Organization <span
+                                                class="optional">(Optional)</span></label>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -244,18 +248,19 @@
                                         <label for="email">Email</label>
                                     </div>
                                     <div class="input-field col s6 m5">
-                                            <i class="material-icons prefix">phone</i>
-                                            <input id="icon_telephone" type="tel" class="validate">
-                                            <label for="icon_telephone">Phone Number <span class="optional">(Optional)</span></label>
+                                        <i class="material-icons prefix">phone</i>
+                                        <input id="icon_telephone" type="tel" class="validate">
+                                        <label for="icon_telephone">Phone Number <span
+                                                class="optional">(Optional)</span></label>
                                     </div>
                                 </div>
-                                    <div class="row">
-                                        <div class="input-field col s12">
-                                            <i class="material-icons prefix">create</i>
-                                            <input id="password" type="text" class="validate">
-                                            <label for="password">Message</label>
-                                        </div>
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <i class="material-icons prefix">create</i>
+                                        <input id="password" type="text" class="validate">
+                                        <label for="password">Message</label>
                                     </div>
+                                </div>
                                 <button id="contact-submit" type="submit">Submit</button>
                             </form>
                         </div>
