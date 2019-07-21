@@ -48,7 +48,9 @@ button:active {
     transform: translateY(4px);
     background-color: rgba(0, 0, 0, 1);
 }
-
+a {
+    color: rgb(124, 149, 187);
+}
 /* Hide/Show elements with Jquery */
 .activated {
     opacity: 1;
@@ -225,7 +227,11 @@ p {
     line-height: 36px;
 }
 .profile-link {
-    line-height: 24px;
+    line-height: 36px;
+    font-size: 18px;
+}
+#profileLinks {
+    margin-top: 6px;
 }
 
 /* ||||||||||||||||||     Portfolio     ||||||||||||||||||||||||| */
@@ -243,9 +249,7 @@ p {
     font-weight: 700;
     overflow: hidden;
   }
-/* .portfolio-box {
-    margin-right: ; FIX!
-} */
+
 
 
 /* |||||||||||||||||||     Contact     ||||||||||||||||||||||||| */
@@ -258,4 +262,37 @@ p {
 }
 .optional {
     font-size: .7rem
+}
+.contactInfo>h6 {
+    font-weight: bold;
+    color: #9e9e9e;
+}
+.contactInfo>p {
+    font-size: 14px;
+}
+.contactInfo>hr {
+    background-color: rgb(82, 98, 122);
+    border: hidden;
+    height: 2px;
+}
+
+  input[type=text]:not(.browser-default):focus:not([readonly]),
+  input[type=tel]:not(.browser-default):focus:not([readonly]),
+  input[type=email]:not(.browser-default):focus:not([readonly]) {
+    border-bottom: 1px solid rgb(82, 98, 122);
+    -webkit-box-shadow: 0 1px 0 0 rgb(82, 98, 122);
+    box-shadow: 0 1px 0 0 rgb(82, 98, 122);
+  }
+  input[type=text]:not(.browser-default):focus:not([readonly])+label, 
+  input[type=tel]:not(.browser-default):focus:not([readonly])+label,
+  input[type=email]:not(.browser-default):focus:not([readonly])+label,
+  .input-field .prefix.active {
+    color: rgb(82, 98, 122)
+  }
+
+  /* TODO Fix to Overide browser default for autofill */
+  input:-internal-autofill-selected:not(.browser-default) {
+    background-color: #181818 !important;
+    background-image: none !important;
+    color: #ffffff !important;
 }
