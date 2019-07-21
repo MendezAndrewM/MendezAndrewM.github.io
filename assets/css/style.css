@@ -225,7 +225,11 @@ p {
     line-height: 36px;
 }
 .profile-link {
-    line-height: 24px;
+    line-height: 36px;
+    font-size: 18px;
+}
+#profileLinks {
+    margin-top: 6px;
 }
 
 /* ||||||||||||||||||     Portfolio     ||||||||||||||||||||||||| */
@@ -243,9 +247,7 @@ p {
     font-weight: 700;
     overflow: hidden;
   }
-/* .portfolio-box {
-    margin-right: ; FIX!
-} */
+
 
 
 /* |||||||||||||||||||     Contact     ||||||||||||||||||||||||| */
