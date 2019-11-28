@@ -1,0 +1,32 @@
+.content-cardM {
+    padding: 16px;
+}
+h2 {
+    font-size: 36px;
+}
+#contentsTab {
+    background-color: inherit;
+    padding: 8px;
+}
+.itemLink {
+    position: relative;
+    text-align: center;
+}
+.itemLink:hover {
+    cursor: pointer;
+}
+.piImg {
+    width: 100%;
+}
+.overImg {
+    width: 100%;
+    background-color: rgba(26, 26, 26, 0.719);
+    color: aliceblue;
+    font-size: 1rem;
+    position: absolute;
+    bottom: 12px;
+    left: 0;
+}
+.underline {
+    text-decoration: underline;
+}
